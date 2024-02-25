@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+button,
+input {
+  all: unset;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+.error {
+  border: 2px solid red;
+}
+
+.none {
+  display: none;
+}
+
+body {
+  background: rgb(2, 0, 36);
+  background: linear-gradient(90deg, rgb(2, 0, 36) 0%, rgb(184, 184, 226) 35%, rgb(0, 212, 255) 100%);
+}
+body .component {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5em;
+}
+body .component p {
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+  background: linear-gradient(to bottom, #1717af 0%, #637282 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding-top: 2em;
+}
+body .component h2 {
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
+  background: linear-gradient(to bottom, #000066 0%, #0080ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+body .component #orderForm {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+body .component #orderForm .labelBox {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2em;
+}
+body .component #orderForm .labelBox label {
+  font-size: 20px;
+  font-weight: 700;
+  background: linear-gradient(to bottom, #000066 0%, #0080ff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+body .component #orderForm .labelBox input {
+  width: 25em;
+  padding: 10px 15px;
+  border-radius: 10px;
+  background-color: #d2e2f5;
+  border: 2px solid #8a2be2;
+  transition: background-color 0.5s, border 0.5s;
+  font-size: 18px;
+  font-weight: 500;
+}
+body .component #orderForm .labelBox input::-moz-placeholder {
+  opacity: 0.5;
+}
+body .component #orderForm .labelBox input::placeholder {
+  opacity: 0.5;
+}
+body .component #orderForm .labelBox input:hover {
+  background-color: #b0e0e6;
+  border: 2px solid #4169e1;
+}
+body .component #orderForm .btnBox {
+  display: flex;
+}
+body .component #orderForm .btnBox button {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+  width: 40%;
+  padding: 10px 15px;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #003d87;
+  border: 2px solid #b76bff;
+  transition: color 0.5s, background-color 0.5s, border 0.5s;
+  cursor: pointer;
+}
+body .component #orderForm .btnBox button:hover {
+  background-color: #b0e0e6;
+  border: 2px solid #4169e1;
+  transition: color 0.5s, background-color 0.5s, border 0.5s;
+  color: #305ba7;
+}
+body .component #orderForm .btnBox button:active {
+  background-color: #ffffff;
+  border: 2px solid #8ca7f8;
+  transition: color 0.5s, background-color 0.5s, border 0.5s;
+}
+body .component #orderForm .btnBox button:disabled {
+  background-color: #ffffff;
+  border: 2px solid #06206d;
+  color: black;
+  cursor: default;
+}/*# sourceMappingURL=style.css.map */

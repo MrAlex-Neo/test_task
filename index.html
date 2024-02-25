@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>test</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./script.js" defer></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="component">
+        <form action="#" id="orderForm">
+          <h2>Заполните форму</h2>
+          <div class="labelBox">
+            <label for="userName">Имя:</label>
+            <input
+              type="text"
+              name="name"
+              placeholder="Введите имя (минимум 3 символа)"
+              id="userName"
+            />
+          </div>
+          <div class="labelBox">
+            <label for="number">Номер телефона:</label>
+            <input type="text" 
+            name="phone" placeholder="Введите номер телефона РФ" id="number"
+            class="number"
+            />
+          </div>
+          <input type="hidden" name="sub1" value="test" id="test" />
+          <div class="btnBox">
+            <button id="submitBtn" type="submit" disabled>Отправить форму</button>
+            <button id="resetBtn" type="reset">Очистить форму</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="success none">
+      <div class="component">
+        <h2>Спасибо за заказ</h2>
+        <p id="textSuccess"></p>
+      </div>
+    </div>
+    <div class="error none">
+      <div class="component">
+        <h2>Ошибка</h2>
+      </div>
+    </div>
+  </body>
+</html>
